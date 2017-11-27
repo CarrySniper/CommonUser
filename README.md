@@ -14,3 +14,19 @@
 
 #### 3.为MyUser添加属性，即可实例化对象进行操作。
  
+```
+    // 保存数据
+    [MyUser update:@{@"Mobile":@"10086", @"Name":@"帅气的钱包",@"CreateDate":@"2017-11-11"}];
+    
+    // 清除数据
+    // [MyUser logout];
+    
+    // 获取数据
+    MyUser *user = [MyUser currentUser];
+    if (!user) {
+        NSLog(@"对象不存在");
+    }else{
+        NSLog(@"%@ %@", user.Mobile, user.Name);
+    }
+```
+NSlog结果： 10086 帅气的钱包
