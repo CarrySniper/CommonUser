@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyUser.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // 保存数据
+    [MyUser update:@{@"Mobile":@"10086", @"Name":@"帅气的钱包",@"CreateDate":@"2017-11-11"}];
+    
+    // 清除数据
+    // [MyUser logout];
+    
+    // 获取数据
+    MyUser *user = [MyUser currentUser];
+    if (!user) {
+        NSLog(@"对象不存在");
+    }else{
+        NSLog(@"%@ %@", user.Mobile, user.Name);
+    }
 }
 
 
