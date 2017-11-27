@@ -6,6 +6,7 @@
 //
 
 #import "CommonUser.h"
+#import <objc/runtime.h>
 
 /** UserDefaults专用key标识 */
 static NSString *const kCommonUserDefaultsKey           = @"commonUserKeyOf";

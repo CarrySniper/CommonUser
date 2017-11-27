@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.author        = { "cjq002" => "692771080@qq.com" }
   s.platform      = :ios, "8.0"
   s.source        = { :git => "https://github.com/cjq002/CommonUser.git", :tag => "#{s.version}" }
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "CommonUser/*.{h,m}"
   s.framework     = "Foundation"
 
 end
