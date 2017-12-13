@@ -11,7 +11,7 @@
 方法二：直接下载文件夹CommonUser（内含两个.h.m文件），拖到您的项目工程里面。
 
 #### 2.使用
-新建文件MyUser集成于CommonUser。
+新建文件MyUser继承于CommonUser。
 
 #### 3.为MyUser添加属性，即可实例化对象进行操作。
  
