@@ -17,10 +17,11 @@
 #### 3.为MyUser添加属性，即可实例化对象进行操作。
  
 ```
-    // 网络获取到的数据
-    NSDictionary *networkData = @{@"id":@"NO123456", @"userName":@"帅气的钱包", @"mobile":@"10086", @"profile":@{@"money":@100,@"qq":@"692771080"}};
+// 网络获取到的数据
+NSDictionary *networkData = @{@"id":@"NO123456", @"userName":@"帅气的钱包", @"mobile":@"10086", @"profile":@{@"money":@100,@"qq":@"692771080"}};
 ```
-    // MARK: - 示例一：MyUser
+示例一：MyUser
+``` 
     [MyUser saveUserData:networkData];
     
     // 获取数据
@@ -35,8 +36,8 @@
     // 清除数据
     //[MyUser logout];
 ```
+示例二：CLUser
 ```
-    // MARK: - 示例二：CLUser
     [CLUser saveUserData:networkData];
     
     CLUser *newUser = [CLUser currentUser];
@@ -46,10 +47,11 @@
     // 输出保存的数据
     NSLog(@"%@", [CLUser allData]);
 ```
-NSlog结果： 
->
+
+#### NSlog结果： 
+```
 10086 帅气的钱包
-NO123456 帅气的钱包 
+NO123456 帅气的钱包
 {
     id = NO123456;
     profile =     {
@@ -58,4 +60,4 @@ NO123456 帅气的钱包
     };
     userName = "\U5e05\U6c14\U7684\U94b1\U5305";
 }
-
+```
