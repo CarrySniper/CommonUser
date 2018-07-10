@@ -59,12 +59,12 @@ static dispatch_once_t onceToken;
 
 
 #pragma mark - User的setter方法，存储数据，要重新赋值单例
-+ (void)update:(NSDictionary *)dictionary {
-    [dictionary enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
++ (void)saveUserData:(NSDictionary *)userData {
+    [userData enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         if (obj && ![obj isKindOfClass:[NSNull class]]) {
             [[NSUserDefaults standardUserDefaults] setObject:obj forKey:[CommonUser appendingString:key]];
         }
-        if ([key isEqualToString:dictionary.allKeys.lastObject]) {
+        if ([key isEqualToString:userData.allKeys.lastObject]) {
             [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:kPrimaryKeyForCommonUser];
             [[NSUserDefaults standardUserDefaults] synchronize];
         }
@@ -122,6 +122,55 @@ static dispatch_once_t onceToken;
     }
     free(properties);
     return array;
+}
+
+#pragma mark - 对象转换为字典
++ (NSDictionary *)dictionaryFromObject:(id)object {
+	NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+	unsigned int propsCount;
+	
+	objc_property_t *props = class_copyPropertyList([object class], &propsCount);
+	
+	for (int i = 0; i < propsCount; i++) {
+		objc_property_t prop = props[i];
+		NSString *propName = [NSString stringWithUTF8String:property_getName(prop)];
+		id value = [object valueForKey:propName];
+		if(value == nil) {
+			value = [NSNull null];
+		} else {
+			value = [self getObjectInternal:value];
+		}
+		[dict setObject:value forKey:propName];
+	}
+	return dict;
+}
+
+#pragma mark 转换辅助
++ (id)getObjectInternal:(id)object {
+	
+	if([object isKindOfClass:[NSString class]] ||
+	   [object isKindOfClass:[NSNumber class]] ||
+	   [object isKindOfClass:[NSNull class]]) {
+		return object;
+	}
+	if ([object isKindOfClass:[NSArray class]]) {
+		NSArray *objArray = object;
+		NSMutableArray *tempArray = [NSMutableArray arrayWithCapacity:objArray.count];
+		for(int i = 0; i < objArray.count; i++) {
+			[tempArray setObject:[self getObjectInternal:[objArray objectAtIndex:i]] atIndexedSubscript:i];
+		}
+		return tempArray;
+	}
+	if([object isKindOfClass:[NSDictionary class]]) {
+		NSDictionary *objDict = object;
+		NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:[objDict count]];
+		
+		for (NSString *key in objDict.allKeys) {
+			[dict setObject:[self getObjectInternal:[objDict objectForKey:key]] forKey:key];
+		}
+		return dict;
+	}
+	return [self dictionaryFromObject:object];
 }
 
 @end

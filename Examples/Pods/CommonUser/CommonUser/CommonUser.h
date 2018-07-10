@@ -34,4 +34,12 @@
  */
 + (void)update:(NSDictionary *)dictionary;
 
+/**
+ 对象转换为字典
+ 
+ @param object 需要转化的对象
+ @return 转换后的字典
+ */
++ (NSDictionary *)dictionaryFromObject:(id)object;
+
 @end

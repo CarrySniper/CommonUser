@@ -30,8 +30,16 @@
 /**
  更新数据，set方法是不存储的
  
- @param dictionary 对象
+ @param userData 用户数据
  */
-+ (void)update:(NSDictionary *)dictionary;
++ (void)saveUserData:(NSDictionary *)userData;
+
+/**
+ 对象转换为字典
+ 
+ @param object 需要转化的对象
+ @return 转换后的字典
+ */
++ (NSDictionary *)dictionaryFromObject:(id)object;
 
 @end

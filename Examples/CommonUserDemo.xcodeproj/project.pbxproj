@@ -15,6 +15,7 @@
 		993539E41FC82D2A004E55F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993539E21FC82D2A004E55F3 /* LaunchScreen.storyboard */; };
 		993539E71FC82D2A004E55F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 993539E61FC82D2A004E55F3 /* main.m */; };
 		99463E7A1FCBC02B0047E597 /* MyUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 99463E791FCBC02B0047E597 /* MyUser.m */; };
+		FAF49C9820F492A8006EB254 /* CLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF49C9720F492A8006EB254 /* CLUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		99463E781FCBC02B0047E597 /* MyUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUser.h; sourceTree = "<group>"; };
 		99463E791FCBC02B0047E597 /* MyUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUser.m; sourceTree = "<group>"; };
 		DBB930CA1F23E880784A45DF /* Pods-CommonUserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonUserDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonUserDemo/Pods-CommonUserDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FAF49C9620F492A8006EB254 /* CLUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLUser.h; sourceTree = "<group>"; };
+		FAF49C9720F492A8006EB254 /* CLUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLUser.m; sourceTree = "<group>"; };
 		FBBF8453B27E713948E69902 /* libPods-CommonUserDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommonUserDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +81,8 @@
 			children = (
 				99463E781FCBC02B0047E597 /* MyUser.h */,
 				99463E791FCBC02B0047E597 /* MyUser.m */,
+				FAF49C9620F492A8006EB254 /* CLUser.h */,
+				FAF49C9720F492A8006EB254 /* CLUser.m */,
 				993539D71FC82D2A004E55F3 /* AppDelegate.h */,
 				993539D81FC82D2A004E55F3 /* AppDelegate.m */,
 				993539DA1FC82D2A004E55F3 /* ViewController.h */,
@@ -111,8 +116,6 @@
 				993539D01FC82D2A004E55F3 /* Sources */,
 				993539D11FC82D2A004E55F3 /* Frameworks */,
 				993539D21FC82D2A004E55F3 /* Resources */,
-				63812378C2CCE7030341E291 /* [CP] Embed Pods Frameworks */,
-				FB6617F5D37CBAAF21C29C7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,36 +191,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		63812378C2CCE7030341E291 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommonUserDemo/Pods-CommonUserDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FB6617F5D37CBAAF21C29C7F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommonUserDemo/Pods-CommonUserDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -229,6 +202,7 @@
 				993539DC1FC82D2A004E55F3 /* ViewController.m in Sources */,
 				993539E71FC82D2A004E55F3 /* main.m in Sources */,
 				993539D91FC82D2A004E55F3 /* AppDelegate.m in Sources */,
+				FAF49C9820F492A8006EB254 /* CLUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

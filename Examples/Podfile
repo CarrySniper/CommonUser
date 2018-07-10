@@ -8,5 +8,6 @@ target 'CommonUserDemo' do
   # Pods for CommonUserDemo
 
   pod 'CommonUser'
+  pod 'YYModel'
 
 end
