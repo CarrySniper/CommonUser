@@ -6,13 +6,16 @@
 //  Copyright © 2018年 github/cjq002. All rights reserved.
 //
 
+
 #import <CommonUser/CommonUser.h>
 #import <YYModel/YYModel.h>
 
 @interface CLUser : CommonUser<NSCoding, NSCopying>
 
 @property (nonatomic, copy) NSString *userId;           //用户ID
+@property (nonatomic, copy) NSString *userName;			//用户昵称
 @property (nonatomic, copy) NSString *sessionToken;     //用户标识
+@property (nonatomic, copy) NSDictionary *profile;     	//用户概述
 
 /**
  *  获取当前缓存用户、如果init的话会初始化新的对象
@@ -46,3 +49,4 @@
 + (NSDictionary *)allData;
 
 @end
+

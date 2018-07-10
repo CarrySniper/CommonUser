@@ -38,7 +38,7 @@
 	}
 	// 避免字段映射错误
 	CLUser *user = [CLUser yy_modelWithJSON:tempDictionary];
-	[super update:[CLUser dictionaryFromObject:user]];
+	[super saveUserData:[CLUser dictionaryFromObject:user]];
 }
 
 #pragma mark 获取所以用户数据
@@ -94,3 +94,5 @@
 }
 
 @end
+
+

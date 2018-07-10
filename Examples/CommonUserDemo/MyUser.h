@@ -10,7 +10,7 @@
 
 @interface MyUser : CommonUser
 
-@property (nonatomic, copy) NSString *Mobile;
-@property (nonatomic, copy) NSString *Name;
+@property (nonatomic, copy) NSString *mobile;
+@property (nonatomic, copy) NSString *userName;
 
 @end

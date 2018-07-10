@@ -1,5 +1,5 @@
 PODS:
-  - CommonUser (0.0.2)
+  - CommonUser (1.0.0)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ SPEC REPOS:
     - YYModel
 
 SPEC CHECKSUMS:
-  CommonUser: 23c033ccb6c90afd5c4746de477e93dcae997d98
+  CommonUser: 79ca98d66a2e139411262ef346ad0d8ac77d31c2
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: b0f5062245d18000f1afdee788a88045abfb3321

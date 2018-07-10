@@ -59,12 +59,12 @@ static dispatch_once_t onceToken;
 
 
 #pragma mark - User的setter方法，存储数据，要重新赋值单例
-+ (void)update:(NSDictionary *)dictionary {
-    [dictionary enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
++ (void)saveUserData:(NSDictionary *)userData {
+    [userData enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         if (obj && ![obj isKindOfClass:[NSNull class]]) {
             [[NSUserDefaults standardUserDefaults] setObject:obj forKey:[CommonUser appendingString:key]];
         }
-        if ([key isEqualToString:dictionary.allKeys.lastObject]) {
+        if ([key isEqualToString:userData.allKeys.lastObject]) {
             [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:kPrimaryKeyForCommonUser];
             [[NSUserDefaults standardUserDefaults] synchronize];
         }
@@ -145,6 +145,7 @@ static dispatch_once_t onceToken;
 	return dict;
 }
 
+#pragma mark 转换辅助
 + (id)getObjectInternal:(id)object {
 	
 	if([object isKindOfClass:[NSString class]] ||

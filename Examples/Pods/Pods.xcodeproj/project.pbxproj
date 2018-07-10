@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,15 +12,15 @@
 		3B1FA336424E05048CE6B9C80EF25987 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D8E50D2010969B0229874A5666218048 /* YYModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		47BB539BEE8229A71D2347B70EC18ACD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B941AC315E531198F14455C0DD0B0E8 /* Foundation.framework */; };
 		5C39DE13BAE8933EEFF129B719D6CF37 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5E92C250219C46E30FE55975F285CA /* NSObject+YYModel.m */; };
-		6209A2D00148A2E456C1E32002A2863F /* CommonUser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD5BAE06F1A2BB3573943C9DBFB47B /* CommonUser-dummy.m */; };
 		7F4343896AFAC061BB0484F8CB931025 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AD698E20A0B75952900142B21316E17D /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9CCABE9327E873F822DCC9A8D0523A8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B941AC315E531198F14455C0DD0B0E8 /* Foundation.framework */; };
 		A50B108C8FC7BE66DE19F8EA093D78ED /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E8790DF6348017270297B53ADCEF40D6 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AD3C1E1BBD8B78CA45E8729A93EB604F /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CFDA72ED28276D63B39C179215EAB4 /* YYModel-dummy.m */; };
 		C71BAB648033E823FBB26E854F15E031 /* Pods-CommonUserDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 013BB6D8F2DE301FD5FC3D66D703DAF8 /* Pods-CommonUserDemo-dummy.m */; };
 		CA1A7A6BB7021A4E260D45D97110ED56 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F22E938200A377F49B655AAED0AE0CA /* YYClassInfo.m */; };
+		D60A7DAFC69A794821D7790FAC5397FD /* CommonUser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA619D7E8B8488D5C748337822BFE2B9 /* CommonUser.m */; };
 		E195B99D5AF45784500CE8730A6E3A73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B941AC315E531198F14455C0DD0B0E8 /* Foundation.framework */; };
-		F6AF19F3F5168D42A2B8CD5EE615C3F3 /* CommonUser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA619D7E8B8488D5C748337822BFE2B9 /* CommonUser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FB4DAFFEDF713273A25A17F7C35BB182 /* CommonUser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD5BAE06F1A2BB3573943C9DBFB47B /* CommonUser-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +43,9 @@
 /* Begin PBXFileReference section */
 		013BB6D8F2DE301FD5FC3D66D703DAF8 /* Pods-CommonUserDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CommonUserDemo-dummy.m"; sourceTree = "<group>"; };
 		0A5E92C250219C46E30FE55975F285CA /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
-		0C5973AAA61C5CC6219B9B69BC9387FA /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYModel.a; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C5973AAA61C5CC6219B9B69BC9387FA /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D120E6B48BD9E02961717F0C9D7A641 /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
-		1AAEDBF5093E9D652065C7335DBF47FA /* libPods-CommonUserDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CommonUserDemo.a"; path = "libPods-CommonUserDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAEDBF5093E9D652065C7335DBF47FA /* libPods-CommonUserDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommonUserDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F22E938200A377F49B655AAED0AE0CA /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
 		1FAD6EC14C9652A10819C54B2EAB78D9 /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
 		31F25C28A4671A408B803A1F457283B7 /* Pods-CommonUserDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CommonUserDemo-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -57,9 +57,9 @@
 		77C947C05E17D93B5EA3435CB638A68C /* CommonUser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CommonUser.xcconfig; sourceTree = "<group>"; };
 		7DF95CCAE6881F4EA40975ABC6F91FB1 /* CommonUser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonUser-prefix.pch"; sourceTree = "<group>"; };
 		8B941AC315E531198F14455C0DD0B0E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8D05BC8EBE05F1F83E4151C966241231 /* libCommonUser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCommonUser.a; path = libCommonUser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D05BC8EBE05F1F83E4151C966241231 /* libCommonUser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommonUser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF5470A02991650B65ACC8AAE40C677 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9CBD5BAE06F1A2BB3573943C9DBFB47B /* CommonUser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CommonUser-dummy.m"; sourceTree = "<group>"; };
 		A7CFDA72ED28276D63B39C179215EAB4 /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
 		AA619D7E8B8488D5C748337822BFE2B9 /* CommonUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CommonUser.m; path = CommonUser/CommonUser.m; sourceTree = "<group>"; };
@@ -163,7 +163,6 @@
 				D8E50D2010969B0229874A5666218048 /* YYModel.h */,
 				BE098D8BAEE224EC9277B2F3F19483FE /* Support Files */,
 			);
-			name = YYModel;
 			path = YYModel;
 			sourceTree = "<group>";
 		};
@@ -196,7 +195,6 @@
 				AA619D7E8B8488D5C748337822BFE2B9 /* CommonUser.m */,
 				A34C578B535BD0F55332D47756FCCDE0 /* Support Files */,
 			);
-			name = CommonUser;
 			path = CommonUser;
 			sourceTree = "<group>";
 		};
@@ -261,7 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B49AA9970ECDB387B85363366F3719D /* Build configuration list for PBXNativeTarget "CommonUser" */;
 			buildPhases = (
-				3DA9373438FED212FEF616D896C67C54 /* Sources */,
+				C2D3DFC9048EA749C82E4DD707C28377 /* Sources */,
 				E1EB7781AE7102F3441A70093BFEC72D /* Frameworks */,
 				2BE6256F2CE564D379E4A6AE2E80DDBA /* Headers */,
 			);
@@ -298,7 +296,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -320,15 +318,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3DA9373438FED212FEF616D896C67C54 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6209A2D00148A2E456C1E32002A2863F /* CommonUser-dummy.m in Sources */,
-				F6AF19F3F5168D42A2B8CD5EE615C3F3 /* CommonUser.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5C95FD4083BA3FB16796E256501DD3C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,6 +325,15 @@
 				5C39DE13BAE8933EEFF129B719D6CF37 /* NSObject+YYModel.m in Sources */,
 				CA1A7A6BB7021A4E260D45D97110ED56 /* YYClassInfo.m in Sources */,
 				AD3C1E1BBD8B78CA45E8729A93EB604F /* YYModel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D3DFC9048EA749C82E4DD707C28377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4DAFFEDF713273A25A17F7C35BB182 /* CommonUser-dummy.m in Sources */,
+				D60A7DAFC69A794821D7790FAC5397FD /* CommonUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,30 +448,6 @@
 			};
 			name = Release;
 		};
-		44DA8CA484E0C4D4D71FC8B0AC1B6EEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77C947C05E17D93B5EA3435CB638A68C /* CommonUser.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/CommonUser/CommonUser-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = CommonUser;
-				PRODUCT_NAME = CommonUser;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		70327EE535432D879C9A97403EA0941F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D120E6B48BD9E02961717F0C9D7A641 /* YYModel.xcconfig */;
@@ -483,7 +457,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -518,17 +492,16 @@
 			};
 			name = Debug;
 		};
-		8B7EF42663DAC1F596E146C089E1E023 /* Release */ = {
+		99B6393A11CB135F0DD59F926DB6F3FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 77C947C05E17D93B5EA3435CB638A68C /* CommonUser.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/CommonUser/CommonUser-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -543,6 +516,29 @@
 			};
 			name = Release;
 		};
+		BBB71B5924B942F91ED06F8EB91554E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77C947C05E17D93B5EA3435CB638A68C /* CommonUser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CommonUser/CommonUser-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CommonUser;
+				PRODUCT_NAME = CommonUser;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		CB0CE620D920D1C2E797CD1D7417CB58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D120E6B48BD9E02961717F0C9D7A641 /* YYModel.xcconfig */;
@@ -552,7 +548,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -649,8 +645,8 @@
 		7B49AA9970ECDB387B85363366F3719D /* Build configuration list for PBXNativeTarget "CommonUser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44DA8CA484E0C4D4D71FC8B0AC1B6EEC /* Debug */,
-				8B7EF42663DAC1F596E146C089E1E023 /* Release */,
+				BBB71B5924B942F91ED06F8EB91554E8 /* Debug */,
+				99B6393A11CB135F0DD59F926DB6F3FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
